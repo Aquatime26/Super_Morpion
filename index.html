@@ -20,7 +20,7 @@
         <div id="gameContainer">
             <h1>Supermorpion</h1>
             <div id="startGame">
-                <h2 id="rules">Règles du jeu</h2>
+                <h2 id="rulesTitle">Règles du jeu</h2>
                 <p id="welcome">Bienvenue dans le jeu du Super-Morpion</p>
                 <p class="rules">Cette nouvelle variante du morpion se joue sur un plateau de 9x9 cases, divisé en 9 sous-plateaux de 3x3 cases.
                     Plusieurs nouvelles règles s'appliquent :</p>
@@ -29,11 +29,18 @@
                     <li>Le premier joueur place son symbole dans n'importe quelle case du plateau.</li>
                     <li>Le coup joué détermine le sous-plateau où le prochain joueur doit jouer. Par exemple, si le premier joueur place son symbole
                     dans la case en haut à droite d'un sous-plateau, le prochain joueur doit jouer dans le sous-plateau en haut à droite du plateau principal.</li>
-                    <li>Si un joueur est envoyé dans un sous-plateau déjà remporté ou plein, il peut jouer dans n'importe quelle case libre du plateau principal.</li>
-                    <li>Un joueur remporte un sous-plateau en alignant trois de ses symboles horizontalement, verticalement ou en diagonale dans ce sous-plateau.</li>
-                    <li>Le jeu se termine lorsqu'un joueur remporte trois sous-plateaux alignés horizontalement, verticalement ou en diagonale
-                    sur le plateau principal, ou lorsque toutes les cases sont remplies sans qu'aucun joueur n'ait gagné, ce qui entraîne une égalité.</li>
+                    <li>Une ligne en diagonale, verticale ou horizontale permet de gagner un sous-plateau, et vous fait gagner 3 points.</li>
+                    <li>Si un joueur arrive à remporter 3 sous-plateaux alignés horizontalement, verticalement ou en diagonale sur le plateau principal, il gagne 10 points.</li>
+                    <li>Pour chaque case qui prolonge une ligne complètée dans un sous-tableau, le joueur gagne 1+n point, c'est à dire 1 point +1 par case supplémentaire</li>   
                 </ul>
+                <h3 class="exempleTitle">EXEMPLES</h3>
+                    <p class="exemple">une ligne de 4 cases donne 5 points au total (3points pour la ligne de base 2 points pour la 4ème case)
+                    </p>
+                    <p class="exemple">une ligne de 5 cases donne 8 points au total (3points pour la ligne de base 2 points pour la 4ème case, et +3points et 5ème case)
+                    </p>
+                    <p class="exemple">une ligne de 6 cases donne 12 points au total (3points pour la ligne de base 2 points pour la 4ème case, et +3points et 5ème case, +4points et 6ème case)
+                    </p>
+                    <p class="exemple">etc...</p> 
                 <button id="startButton">Commencer à jouer</button>
             </div>
         </div>

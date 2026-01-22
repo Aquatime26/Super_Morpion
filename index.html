@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta lang="fr">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="author" content="Alexis AVRIL">
+        <title>Supermorpion</title>
+        <meta name="description" content="Jeu du supermorpion en ligne">
+        <link rel="stylesheet" href="/style.css">
+
+        <meta property="og:title" content="Supermorpion">
+        <meta property="og:description" content="Jeu du supermorpion en ligne">
+        <meta property="og:type" content="website">
+        <meta robots="index, follow">
+    </head>
+
+    <body>
+        <div id="gameContainer">
+            <h1>Supermorpion</h1>
+            <div id="startGame">
+                <h2 id="rules">Règles du jeu</h2>
+                <p id="welcome">Bienvenue dans le jeu du Super-Morpion</p>
+                <p class="rules">Cette nouvelle variante du morpion se joue sur un plateau de 9x9 cases, divisé en 9 sous-plateaux de 3x3 cases.
+                    Plusieurs nouvelles règles s'appliquent :</p>
+                <ul class="rules">
+                    <li>Chaque joueur choisit un symbole (X ou O) et joue à tour de rôle.</li>
+                    <li>Le premier joueur place son symbole dans n'importe quelle case du plateau.</li>
+                    <li>Le coup joué détermine le sous-plateau où le prochain joueur doit jouer. Par exemple, si le premier joueur place son symbole
+                    dans la case en haut à droite d'un sous-plateau, le prochain joueur doit jouer dans le sous-plateau en haut à droite du plateau principal.</li>
+                    <li>Si un joueur est envoyé dans un sous-plateau déjà remporté ou plein, il peut jouer dans n'importe quelle case libre du plateau principal.</li>
+                    <li>Un joueur remporte un sous-plateau en alignant trois de ses symboles horizontalement, verticalement ou en diagonale dans ce sous-plateau.</li>
+                    <li>Le jeu se termine lorsqu'un joueur remporte trois sous-plateaux alignés horizontalement, verticalement ou en diagonale
+                    sur le plateau principal, ou lorsque toutes les cases sont remplies sans qu'aucun joueur n'ait gagné, ce qui entraîne une égalité.</li>
+                </ul>
+                <button id="startButton">Commencer à jouer</button>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+</html>
+
